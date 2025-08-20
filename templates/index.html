@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Controle de Estoque</title>
+</head>
+<body>
+    <h1>Controle de Estoque</h1>
+    <a href="/add">Adicionar Produto</a>
+    <ul>
+        {% for produto in produtos %}
+        <li>
+            {{produto.nome}} - {{produto.quantidade }} unidades
+            <a href="/delete/{{produto.id }}">excluir</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
