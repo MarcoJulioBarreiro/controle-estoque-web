@@ -52,8 +52,23 @@ Arquivos criados/alterados hoje:
 - templates/index.html (listagem de produtos)
 - templates/add.html (formulário para adicionar produtos)
 - teste_bd.py (script auxiliar para verificar dados do banco)
+26/08/2025
 
-Observações finais:
+RELATÓRIO DE DESENVOLVIMENTO - CONTROLE DE ESTOQUE
+Data: 26/08/2025
+Problemas encontrados e soluções:
+   - HTML com erro de escrita "from" em vez de "form" → corrigido.
+   - TemplateSyntaxError no Jinja2 por causa do else → corrigido usando "produtos|length > 0".
+   - Produtos não apareciam ou não eram salvos → resolvido corrigindo o form e garantindo conversão para int.
+   - Dúvida sobre caminho do banco → print do caminho absoluto no terminal.
+   - Problemas com Git remoto → instruções para setar remote corretamente.
+Testes realizados:
+   - Cadastro de produtos funcionou corretamente.
+   - Listagem de produtos funcionando com mensagem "Nenhum produto cadastrado" quando lista vazia.
+   - Exclusão de produtos funcionando.
+   - Teste do banco com teste_bd.py funcionando.
+   - Todo o backend do projeto fora concluido
+ Observações finais:
 O projeto avançou de um simples script em Python para uma aplicação web com Flask e banco SQLite. 
 Ainda é necessário ajustar a exibição dos dados na página, mas já temos a estrutura principal em funcionamento.
 
